@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--18강 표3: 병합-->
+    <table border = "1">
+        <thead>
+            <tr>
+                <th>이름</th>  <th>성별</th>  <th>주소</th> <th>회비</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>최진혁</td>  <td>남</td>  <td rowspan="2">청주</td> <td>1000</td>
+                <!--rowspan="n"는 행에 해당함. 즉 해당 칸부터 아래 n칸까지 병합-->
+            </tr>
+            <tr>
+                <td>최유빈</td>  <td>여</td>  <td>청주</td> <td>500</td>
+            </tr>
+        </tbody>
+        <!-- 표에서 가장 아래쪽을 나타내는 태그-->
+        <tfloot>
+            <tr>
+            <td colspan="3">합계</td> <td>1500</td>
+            <!--colspan="n"는 열에 해당함. 즉 해당 칸부터 오른쪽으로 n칸까지 병합-->
+            </tr>
+        </tfloot>
+    </table>
+    
+    <!--19강 form 기본, from이란 마치 입출력. 아이디나 비밀번호 등의 입력을 돕는다-->
+    <form action="https://opentutorials.org/module/1892/10944">
+    <p>아이디: <input type="text" name=""></p>
+    <p>비밀번호: <input type="password"></p>
+    <p><input type="submit"></p>
+    <p>textarea:
+        <textarea cols="50" rows="10"><!--여기에 적은 내용=value--></textarea>
+    </p>
+    </from>
+    
+    <!--사용자로부터 text를 받겠다 사용자가 입력할수 있는 박스 생성
+    password=입력받은 정보를 *로 감춤
+    submit=제출 버튼 생성
+    <form action="링크 주소" 제출 클릭시 링크 주소 부분으로 이동
+    name=""사용자가 입력한 값과 사용자가 가지고 있는 아이디/비밀번호등이 같은지 알아냄
+    value=""사용자가 창을 열었을때 해당 칸에 처음부터 적혀있는 멘트 ex.비밀번호를 입력하세요
+    textarea 여러줄을 입력받을 수 있게 함. cols=n개의 문자 입력(가로) row=n개의 줄 입력 세로-->
+
+
+
+
+</body>
+</html>
